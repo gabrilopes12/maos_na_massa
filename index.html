@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/public/styles/style.css">
+    <link rel="shortcut icon" href="/public/assets/favicon/MAOMASSA.png" type="image/x-icon">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+
+    <!-- Fontes do Google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
+        rel="stylesheet">
+    <title>Projeto Mãos na Massa</title>
+</head>
+
+
+<body class="bg-secondary">
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand active" href="index.html"><img src="/public/assets/favicon/MAOMASSA.png"
+                    alt="Foto da logo do mãos na massa"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#myNav"
+                aria-controls="myNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="myNav">
+                <div class="navbar-nav ms-auto">
+                    <a class="nav-link me-2 corTexto p-3" aria-current="page" href="/public/src/quemsomos.html">Quem
+                        Somos</a>
+                    <a class="nav-link me-2 p-3" aria-current="page" href="/public/src/realizacoes.html">Realizações</a>
+                    <a class="nav-link me-2 p-3" aria-current="page" href="/public/src/parcerias.html">Parceiros</a>
+                    <a class="nav-link me-2 p-3" aria-current="page" href="/public/src/queroajuda.html">Quero Ajuda</a>
+                    <a class="nav-link me-2 p-3" aria-current="page" href="/public/src/noticias.html">Notícias</a>
+                    <a class="nav-link me-2 p-3" aria-current="page" href="/public/src/faq.html">FAQ</a>
+                    <a class="nav-link me-2 p-3" aria-current="page" href="/public/src/contato.html">Contato</a>
+                    <a class="nav-link me-2 ajude_agora p-3" href="/public/src/areadedoadores.html">Ajude Agora</a>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle login" href="#" id="navbarDropdownMenuLink"
+                            data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <img class="login_foto" src="/public/assets/favicon/perfil-removebg-preview.png"
+                                alt="login" />
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item" href="public/src/login.html">Login</a>
+                            <a class="dropdown-item data" href="public/src/signup.html">Cadastrar</a>
+                        </div>
+                    </li>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <main class="corpo__pagina-principal">
+
+        <!-- Ícone de acessibilidade -->
+        <script>
+            (function (d) {
+                var s = d.createElement("script");
+                s.setAttribute("data-account", "DLmQUCAOoW");
+                s.setAttribute("src", "https://cdn.userway.org/widget.js");
+                (d.body || d.head).appendChild(s);
+
+                s.onload = function () {
+                    const observer = new MutationObserver(() => {
+                        const userwayWidget = document.querySelector(
+                            ".userway_buttons_wrapper"
+                        );
+                        if (userwayWidget) {
+                            userwayWidget.style.position = "fixed";
+                            userwayWidget.style.top = "50%";
+                            userwayWidget.style.left = "50%";
+                            userwayWidget.style.transform = "translate(-50%, -50%)";
+                            userwayWidget.style.zIndex = "1000";
+                        }
+                    });
+
+                    observer.observe(document.body, {
+                        childList: true,
+                        subtree: true,
+                    });
+                };
+            })(document);
+        </script>
+
+        <div vw class="enabled">
+            <div vw-access-button class="active"></div>
+            <div vw-plugin-wrapper>
+                <div class="vw-plugin-top-wrapper"></div>
+            </div>
+        </div>
+        <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+        <script>
+            new window.VLibras.Widget("https://vlibras.gov.br/app");
+        </script>
+
+        <section class="apresentacao">
+            <div id="bg"></div>
+            <div class="text-center">
+                <h1 class="apresentacao__titulo">PROJETO MÃOS NA MASSA</h1>
+                <h2 id="slogan__titulo">"Construindo um Brasil mais inclusivo, tijolo por tijolo"</h2>
+            </div>
+        </section>
+        <section id="impacto">
+            <div class="linhaTitulo">
+                <p class="text-center revel-type-horizontal tituloImpacto">Nosso impacto</p>
+            </div>
+
+            <div class="container">
+                <img src="public/assets/images/imagem_2024-12-02_010937795-removebg-preview.png"
+                    alt="imagem obras Realizadas" id="imagemOBR" class="img-fluid w-70">
+            </div>
+            <div class="linha1">
+                <p class="text-center" id="numeroA">0</p>
+            </div>
+
+            <div class="linha2">
+                <p class="text-center revel-type-horizontal" id="projetos-realizadosI">Projetos Realizados</p>
+            </div>
+
+            <!-- Divisória 2 -->
+            <hr class="divisoria" />
+
+            <div class="linha3">
+                <div class="numero-bloco">
+                    <img src="/public/assets/images/imagem-PA-removebg-preview.png" alt="imagem obras Realizadas"
+                        id="imagemPA" class="img-fluid w-70">
+                    <p class="revel-type" id="numero">13.000 PESSOAS</p>
+                    <p class="revel-type">Acolhidas</p>
+                </div>
+                <div class="numero-bloco">
+                    <img src="/public/assets/images/imagem-MI.png" alt="imagem obras Realizadas" id="imagemMI"
+                        class="img-fluid w-70">
+                    <p class="revel-type" id="numero">4030m²</p>
+                    <p class="revel-type">Metros Quadrados Impactados</p>
+                </div>
+            </div>
+
+            <!-- Divisória 4 -->
+            <hr class="divisoria" />
+
+            <div class="linha5">
+                <p class="revel-type-horizontal">Valores Arrecadados:</p>
+            </div>
+            <div class="container" id="boxContainer">
+                <div class="box">
+                    <div class="box-circle">
+                        <svg>
+                            <circle cx="128" cy="128" r="123"></circle>
+                            <circle id="circleProgress" cx="128" cy="128" r="123"></circle>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container" id="boxContainerV">
+                <div class="valorGrafico">
+                    <p class="revel-type">1,2 Milhões</p>
+                </div>
+            </div>
+
+            <!-- Divisória 5 -->
+            <hr class="divisoria" />
+
+            <div class="linha6">
+                <div class="container" id="boxContainer1">
+                    <div class="texto">
+                        <p class="revel-type-horizontal">Voluntários</p>
+                    </div>
+                    <div class="box1">
+                        <div class="box-circle">
+                            <svg>
+                                <circle cx="128" cy="128" r="123"></circle>
+                                <circle id="circleProgress1" cx="128" cy="128" r="123"></circle>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="valorGraficoL6" id="boxContainerV1">
+                        <p class="revel-type">315</p>
+                    </div>
+                </div>
+
+                <div class="container" id="boxContainer2">
+                    <div class="texto">
+                        <p class="revel-type-horizontal">Parceiros nas Obras</p>
+                    </div>
+                    <div class="box2">
+                        <div class="box-circle">
+                            <svg>
+                                <circle cx="128" cy="128" r="123"></circle>
+                                <circle id="circleProgress2" cx="128" cy="128" r="123"></circle>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="valorGraficoL6" id="boxContainerV2">
+                        <p class="revel-type">218</p>
+                    </div>
+                </div>
+
+                <div class="container" id="boxContainer3">
+                    <div class="texto">
+                        <p class="revel-type-horizontal">Eventos</p>
+                    </div>
+                    <div class="box3">
+                        <div class="box-circle">
+                            <svg>
+                                <circle cx="128" cy="128" r="123"></circle>
+                                <circle id="circleProgress3" cx="128" cy="128" r="123"></circle>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="valorGraficoL6" id="boxContainerV3">
+                        <p class="revel-type">32</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="cards">
+            <div class="container my-4">
+                <div class="row" id="tituloPcard">
+                    <p class="fw-bold">Ajude e faça parte da nossa historia</p>
+                </div>
+                <div class="row row-cols-1 row-cols-md-3 g-5 p-4">
+
+                    <!-- Card 1 -->
+                    <div class="col">
+                        <div class="card h-100">
+                            <div class="img-container">
+                                <img src="public/assets/images/Rosangela Moraes 7.jpeg" class="card-img-top"
+                                    alt="Imagem do Card">
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title text-center" id="tituloCard">Doe Agora</h5>
+                                <p class="card-text">
+                                    Seu ato de generosidade pode transformar vidas. Doe e faça a diferença! <br>
+
+                                    “A sua doação é mais do que um gesto de generosidade; é uma semente de esperança que
+                                    floresce em vidas transformadas.”
+                                </p>
+                                <a href="public/src/areadedoadores.html" class="btn btn-primary">Saiba Mais</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 2 -->
+                    <div class="col">
+                        <div class="card h-100">
+                            <div class="img-container">
+                                <img src="public/assets/images/voluntariosofot.jpeg"
+                                    class="card-img-top" alt="Imagem do Card">
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title text-center" id="tituloCard">Seja Voluntário</h5>
+                                <p class="card-text">
+                                    Por que se voluntariar? <br> 1. Impacto Positivo na Sociedade <br> 2. Crescimento
+                                    Pessoal <br> 3. Bem-estar e Satisfação <br> 4. Valorização Profissional
+
+
+                                </p>
+                                <a href="public/src/areadedoadores.html" class="btn btn-primary">Saiba Mais</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 3 -->
+                    <div class="col">
+                        <div class="card h-100">
+                            <div class="img-container">
+                                <img src="public/assets/images/fotoindexequipe.jpeg" class="card-img-top" alt="Imagem do Card">
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title text-center" id="tituloCard">Conheça Nossos Projetos</h5>
+                                <p class="card-text">
+                                    Venha conhecer nossos projetos, entender como trabalhamos e ver de perto o impacto
+                                    que estamos criando juntos! Aqui, transparência e resultados caminham lado a lado
+                                    para transformar vidas.
+                                </p>
+                                <a href="public/src/realizacoes.html" class="btn btn-primary">Saiba Mais</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <section id="fundo">
+
+            <div class="container">
+                <div class="row align-items-center apresentacao__conteudo">
+                    <div class="col-lg-8 mx-auto">
+                        <p class="text-center" id="texto_principal">
+                            O Mãos na Massa tem como missão promover a dignidade e a inclusão social através da
+                            construção e
+                            adaptação de moradias e espaços comunitários para pessoas com deficiência ou em situação de
+                            vulnerabilidade. A organização mobiliza jovens voluntários para conscientizar e preparar
+                            futuras
+                            gerações sobre os desafios da acessibilidade no Brasil.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="row mais__conteudo mt-4">
+                    <div class="col-lg-6">
+                        <p>
+                            A visão da ONG é ser uma <strong>referência nacional</strong> em acessibilidade, reconhecida
+                            por
+                            transformar a realidade de pessoas vulneráveis, criando um Brasil mais justo.
+                        </p>
+                    </div>
+                    <div class="col-lg-6">
+                        <p>
+                            Guiada por valores como <strong>inclusão</strong>, <strong>dignidade</strong>,
+                            <strong>empatia</strong>,
+                            <strong>solidariedade</strong>, <strong>sustentabilidade</strong> e
+                            <strong>resiliência</strong>, a Mãos
+                            na Massa busca impacto social positivo através de parcerias estratégicas.
+                        </p>
+                    </div>
+                </div>
+                <button class="saiba__mais" onclick="location.href='/public/src/quemsomos.html'">
+                    Saiba Mais!
+                </button>
+        </section>
+        <section id="carrosselHistorias">
+            <div class="container" id="container-carroselI">
+                <div class="row" id="tituloCarroselI">
+                    <p class="fw-bold">Historias que Construimos</p>
+                </div>
+                <div id="carouselHistorias" class="carousel slide" data-bs-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-bs-target="#carouselHistorias" data-bs-slide-to="0" class="active"></li>
+                        <li data-bs-target="#carouselHistorias" data-bs-slide-to="1"></li>
+                        <li data-bs-target="#carouselHistorias" data-bs-slide-to="2"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <a href="quemsomos.html">
+                                <img src="public/assets/images/WhatsApp Image 2023-06-26 at 14.32.44.jpeg"
+                                    class="d-block w-100 img-fluid imagemIndexCarrosel" alt="Imagem 1">
+                            </a>
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Carlos Alberto</h5>
+                                <p>Construímos uma casa totalmente acessível para Carlos Alberto e seu filho. Carlos
+                                    vive com síndrome de artrogripose, e o novo lar foi projetado para atender todas as
+                                    suas necessidades de mobilidade.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <a href="quemsomos.htm">
+                                <img src="public/assets/images/diolice.jpeg"
+                                    class="d-block w-100 img-fluid imagemIndexCarrosel" alt="Imagem 2">
+                            </a>
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>DIOLÍCE</h5>
+                                <p>Construímos uma casa acessível para Diolíce, uma mulher tetraplégica de 25 anos, que
+                                    mora com sua família.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <a href="quemsomos.htm">
+                                <img src="public/assets/images/WhatsApp Image 2023-02-11 at 15.31.45 (3).jpeg"
+                                    class="d-block w-100 img-fluid imagemIndexCarrosel" alt="Imagem 3">
+                            </a>
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>DONA CIDA</h5>
+                                <p>Reformamos e ampliamos a casa para dona Cida e seu neto, ambos são deficientes
+                                    visuais</p>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselHistorias" role="button" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only"></span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselHistorias" role="button" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only"></span>
+                    </a>
+                </div>
+            </div>
+
+        </section>
+    </main>
+    <footer class="rodape py-4">
+        <div class="container pt-5">
+            <div class="row">
+                <div class="col-md-3 mb-3 footer-section">
+                    <p><b>Informações</b></p>
+                    <a href="public/src/quemsomos.html">Quem Somos</a>
+                    <a href="public/src/politica.html">Política de Privacidade</a>
+                    <a href="public/src/realizacoes.html">Realizações</a>
+                </div>
+
+                <div class="col-md-3 mb-3 footer-section">
+                    <p><b>Serviços ao Cliente</b></p>
+                    <a href="public/src/contato.html">Fale Conosco</a>
+                    <a href="public/src/areadedoadores.html">Trabalhe conosco</a>
+                    <a href="public/src/noticias.html">Notícias</a>
+                </div>
+
+                <div class="col-md-3 mb-3 footer-section">
+                    <p><b>Fale Conosco</b></p>
+                    <p>📱 +55 (11) 973285665</p>
+                    <p class="email-info">
+                        ✉️ <span>maosnamassaong@gmail.com</span>
+                    </p>
+                    <p>De segunda a sexta, das 07:00 às 22:00</p>
+                    <p>&copy; Mãos na massa. Direitos reservados</p>
+                </div>
+
+                <div class="col-md-3 mb-3 social-iconsAlinha">
+                    <p><b>Siga-nos em nossas redes sociais!</b></p>
+                    <div class="icons-container">
+                        <a href="https://www.youtube.com/@projetomaosnamassa8265" target="_blank">
+                            <img src="/public/assets/favicon/youtube.svg" alt="YouTube" width="30">
+                        </a>
+                        <a href="https://www.instagram.com/projeto_maosnamassa/" target="_blank">
+                            <img src="/public/assets/favicon/instagram-alt.svg" alt="Instagram" width="30">
+                        </a>
+                        <a href="mailto:maosnamassaong@gmail.com" target="_blank">
+                            <img src="/public/assets/favicon/gmail.svg" alt="Gmail" width="30">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="/public/src/frontend/script/frontend.js"></script>
+    <script src="/public/src/backend/backend.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript">
+        var headerBg = document.getElementById('bg');
+        var titulo = document.querySelector('.apresentacao__titulo');
+        var slogan = document.querySelector('#slogan__titulo');
+        const mediaQueryLarge = window.matchMedia('(min-width: 768px)');
+        const mediaQuerySmall = window.matchMedia('(max-width: 768px)');
+
+        function applyScrollEffect() {
+            var scrollOffset = window.pageYOffset;
+
+            if (mediaQueryLarge.matches) {
+                headerBg.style.opacity = 1 - scrollOffset / 1250;
+                headerBg.style.top = scrollOffset / 15 + 'px';
+                headerBg.style.backgroundPositionY = -scrollOffset / 20 + 'px';
+
+                var maxScrollOffset = 420;
+                var adjustedOffset = Math.min(scrollOffset, maxScrollOffset);
+                titulo.style.marginTop = 120 + adjustedOffset / 1 + 'px';
+                slogan.style.marginTop = 15 + adjustedOffset / 8 + 'px';
+
+                var opacityValue = 1 - adjustedOffset / maxScrollOffset;
+                titulo.style.opacity = opacityValue;
+                slogan.style.opacity = opacityValue;
+
+            } else if (mediaQuerySmall.matches) {
+                headerBg.style.opacity = 1 - scrollOffset / 800;
+                headerBg.style.top = scrollOffset / 20 + 'px';
+                headerBg.style.backgroundPositionY = -scrollOffset / 30 + 'px';
+
+                var maxScrollOffset = 150;
+                var adjustedOffset = Math.min(scrollOffset, maxScrollOffset);
+                titulo.style.marginTop = 100 + adjustedOffset / 1 + 'px';
+                slogan.style.marginTop = 10 + adjustedOffset / 5 + 'px';
+
+                var opacityValue = 1 - adjustedOffset / maxScrollOffset;
+                titulo.style.opacity = opacityValue;
+                slogan.style.opacity = opacityValue;
+            }
+            requestAnimationFrame(applyScrollEffect);
+        }
+
+        requestAnimationFrame(applyScrollEffect);
+
+        var imagemOBR = document.querySelector('#imagemOBR');
+        var imagemPA = document.querySelector('#imagemPA');
+        var imagemMI = document.querySelector('#imagemMI');
+
+        window.addEventListener('scroll', function () {
+            var scrollOffset = window.scrollY;
+            imagemOBR.style.opacity = scrollOffset / 1500;
+            imagemPA.style.opacity = scrollOffset / 3000;
+            imagemMI.style.opacity = scrollOffset / 3000;
+        });
+
+    </script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+        integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"
+        integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://unpkg.com/split-type"></script>
+    <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.19/bundled/lenis.min.js"></script>
+
+    <script>
+        gsap.registerPlugin(ScrollTrigger)
+        const splitTypes = document.querySelectorAll('.revel-type')
+        const splitTypesHorizontal = document.querySelectorAll('.revel-type-horizontal')
+
+        splitTypes.forEach((char, i) => {
+            const text = new SplitType(char, { types: 'chars' })
+            gsap.from(text.chars, {
+                scrollTrigger: {
+                    trigger: char,
+                    start: 'top 98%',
+                    end: 'top 10%',
+                    scrub: true,
+                    markers: false
+                },
+                scaleY: 0,
+                y: -20,
+                transformOrigin: 'top',
+                stagger: 0.1
+            })
+        })
+
+        splitTypesHorizontal.forEach((char, i) => {
+            const text = new SplitType(char, { types: 'chars' })
+            gsap.from(text.chars, {
+                scrollTrigger: {
+                    trigger: char,
+                    start: 'top 90%',
+                    end: 'top 25%',
+                    scrub: true,
+                    markers: false
+                },
+                scaleX: 0,
+                x: -20,
+                transformOrigin: 'left',
+                stagger: 0.1
+            });
+        })
+
+        const animateCircle = (circleId) => {
+            const circle = document.querySelector(circleId);
+            const dashOffsetStart = 774;
+            const dashOffsetEnd = 0;
+            gsap.to(circle, {
+                strokeDashoffset: dashOffsetEnd,
+                scrollTrigger: {
+                    trigger: circle.closest('.box'),
+                    start: "top bottom",
+                    end: "bottom top",
+                    scrub: true
+                }
+            });
+        };
+        animateCircle("#circleProgress")
+        animateCircle("#circleProgress1");
+        animateCircle("#circleProgress2");
+        animateCircle("#circleProgress3");
+
+        const animateNumber = (selector, endValue) => {
+            const element = document.querySelector(selector);
+            const animationValue = { value: 0 };
+            const animation = gsap.to(animationValue, {
+                value: endValue,
+                duration: 2,
+                ease: "power2.out",
+                paused: true,
+                onUpdate: () => {
+                    element.textContent = Math.floor(animationValue.value);
+                },
+            });
+
+            ScrollTrigger.create({
+                trigger: element,
+                start: "top 90%",
+                onEnter: () => {
+                    animation.restart();
+                },
+                onLeaveBack: () => {
+                    animation.pause();
+                    animationValue.value = 0;
+                    element.textContent = "0";
+                },
+            });
+        };
+        animateNumber("#numeroA", 18);
+    </script>
+
+    <script src="https://www.drcode.com.br/nofollow/aviso-cookies/drcode.cookies.js"></script>
+    <script>
+        avisoCookiesDrcode({
+            message: 'Utilizamos cookies para que você tenha a melhor experiência em nosso site. Para saber mais acesse nossa página de Política de Privacidade',
+            backgroundColor: 'rgba(255,255,255,0.95)',
+            textColor: '#666666',
+            buttonBackgoundColor: '#0e9a20',
+            buttonHoverBackgoundColor: '#0a6b16',
+            buttonTextColor: '#ffffff'
+        })
+    </script>
+
+</body>
+
+</html>
